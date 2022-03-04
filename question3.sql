@@ -13,6 +13,18 @@
 
 SELECT Id, ShipCountry, 
 CASE 
+    WHEN ShipCountry NOT IN ('USA', 'Mexico','Canada')
+    THEN 'OtherPlace'
+    ELSE 'NorthAmerica'
+END
+FROM 'Order'
+WHERE Id >= 15445
+ORDER BY Id ASC
+LIMIT 20;
+
+-- Same like this
+SELECT Id, ShipCountry, 
+CASE 
     WHEN ShipCountry IN ('USA', 'Mexico','Canada')
     THEN 'NorthAmerica'
     ELSE 'OtherPlace'
