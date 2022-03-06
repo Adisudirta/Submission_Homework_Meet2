@@ -3,6 +3,10 @@
 -- Details: An order is considered late if ShippedDate > RequiredDate . Print the following format, order by descending
 -- precentage, rounded to the nearest hundredths, like United Package|23.44
 
+
+--NOTES:
+-- The COUNT() function returns the number of records returned by a select query.
+
 SELECT CompanyName, round(delayCnt * 100.0 / cnt, 2) AS pct
 FROM (
       SELECT ShipVia, COUNT(*) AS cnt 
