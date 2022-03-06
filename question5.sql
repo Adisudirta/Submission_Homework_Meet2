@@ -4,6 +4,13 @@
 -- price, and total units on order for categories containing greater than 10 products.
 -- Order by Category Id . Your output should look like Beverages|12|37.98|4.5|263.5|60
 
+
+--NOTES:
+-- The ROUND() function rounds a number to a specified number of decimal places.
+-- The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country".
+-- The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+-- The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.
+
 SELECT CategoryName
      , COUNT(*) AS CategoryCount
      , ROUND(AVG(UnitPrice), 2) AS AvgUnitPrice
