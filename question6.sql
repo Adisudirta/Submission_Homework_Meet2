@@ -18,3 +18,13 @@ FROM (
       GROUP BY pid
 )
 ORDER BY pname ASC;
+
+--OUTPUT:
+-- Alice Mutton|Consolidated Holdings|Elizabeth Brown
+-- Chef Anton's Gumbo Mix|Piccolo und mehr|Georg Pipps
+-- Guaraná Fantástica|Piccolo und mehr|Georg Pipps
+-- Mishi Kobe Niku|Old World Delicatessen|Rene Phillips
+-- Perth Pasties|Piccolo und mehr|Georg Pipps
+-- Rössle Sauerkraut|Piccolo und mehr|Georg Pipps
+-- Singaporean Hokkien Fried Mee|Vins et alcools Chevalier|Paul Henriot
+-- Thüringer Rostbratwurst|Piccolo und mehr|Georg Pipps
