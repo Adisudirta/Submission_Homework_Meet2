@@ -15,7 +15,7 @@ INNER JOIN Region ON Region.Id = RegionId
 GROUP BY EmployeeId
 ORDER BY rid;
 
--- Answer:
+-- OUTPUT:
 -- Eastern|Steven|Buchanan|1987-03-04
 -- Western|Michael|Suyama|1995-07-02
 -- Northern|Anne|Dodsworth|1998-01-27
